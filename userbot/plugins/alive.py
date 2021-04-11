@@ -36,7 +36,7 @@ pm_caption += f" ** ⚔️𝕋𝔼𝕃𝔼𝕋ℍ𝕆ℕ 𝕍𝔼ℝ𝕊𝕀𝕆
 pm_caption += "**⭐𝔻𝔸𝕋𝔸𝔹𝔸𝕊𝔼 𝕊𝕋𝔸𝕋𝕌𝕊⭐ :- 𝔻𝔸𝕋𝔸𝔹𝔸𝕊𝔼 𝕎𝕆ℝ𝕂𝕀ℕ𝔾 ℕ𝕆ℝ𝕄𝔸𝕃𝕃𝕐 **✅\n\n◆"
 
 
-pm_caption +=  "**⭕ℂℍ𝔸ℕℕ𝔼𝕃⭕    : [ᴊᴏɪɴ](https://t.me/Dark_bot_support)**\n\n" 
+pm_caption +=  "**⭕ℂℍ𝔸ℕℕ𝔼𝕃⭕    : [ᴊᴏɪɴ](https://t.me/Dark_bot_updates)**\n\n" 
 
 
 
