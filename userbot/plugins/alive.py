@@ -42,7 +42,7 @@ pm_caption +=  "**⭕ℂℍ𝔸ℕℕ𝔼𝕃⭕    : [ᴊᴏɪɴ](https://t.me/
 
 pm_caption += "**⭐ℂℝ𝔼𝔸𝕋𝕆ℝ ⭐: [ ʜᴀʀsʜ ʜᴇʀᴇ](https://t.me/harsh_78)**\n\n"
 
-pm_caption +=  "[☠️ᴅᴀʀᴋ ʙᴏᴛ ʀᴇᴘᴏ ☠️ ](https://github.com/Harsh-78/Dark_Userbot)\n "    
+pm_caption +=  "[☠️ᴅᴀʀᴋ ʙᴏᴛ ʀᴇᴘᴏ ☠️ ](https://github.com/Harsh-78/Dark-Userbot)\n "    
 
 
 @bot.on(admin_cmd(outgoing=True, pattern="alive$"))
