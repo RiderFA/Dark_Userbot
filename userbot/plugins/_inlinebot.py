@@ -93,7 +93,7 @@ if Var.TG_BOT_USER_NAME_BF_HER is not None and tgbot is not None:
             )
         else:
             result = builder.article(
-                "@Dark_Bot_Support"",
+                "@Dark_Bot_Support",
                 text="""**Hey! This is [Darkbot.](https://t.me/Dark_Bot_Support) \nYou can know more about me from the links given below 👇**""",
                 buttons=[
                     [
