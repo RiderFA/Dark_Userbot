@@ -74,7 +74,7 @@ if Var.TG_BOT_USER_NAME_BF_HER is not None and tgbot is not None:
         builder = event.builder
         result = None
         query = event.text
-        if event.query.user_id == bot.uid and query == "@Dark_Bot_Support""
+        if event.query.user_id == bot.uid and query == "@Dark_Bot_Updates""
             rev_text = query[::-1]
             veriler = button(0, sorted(CMD_HELP))
             result = await builder.article(
@@ -119,14 +119,14 @@ if Var.TG_BOT_USER_NAME_BF_HER is not None and tgbot is not None:
     async def page(event):
         if not event.query.user_id == bot.uid:
             return await event.answer(
-                "DEKH KYA RAHE HO YRR JAO AUR APNA DARK BOT DEPLOY KARO AUR MAJA LE 𝔻𝔸ℝ𝕂𝔹𝕆𝕋™ ",
+                "DEKH KYA RAHE HO YRR JAO AUR APNA DARK BOT DEPLOY KARO AUR MAJA LO 𝔻𝔸ℝ𝕂𝔹𝕆𝕋™ ",
                 cache_time=0,
                 alert=True,
             )
         page = int(event.data_match.group(1).decode("UTF-8"))
         veriler = button(page, CMD_HELP)
         await event.edit(
-            f"**MASTER AT** [DARKBOT](https://t.me/DARK_Bot_Support) __Working...__\n\n**Number of modules installed :** `{len(CMD_HELP)}`\n**page:** {page + 1}/{veriler[0]}",
+            f"**MASTER AT** [DARKBOT](https://t.me/DARK_Bot_Updates) __Working...__\n\n**Number of modules installed :** `{len(CMD_HELP)}`\n**page:** {page + 1}/{veriler[0]}",
             buttons=veriler[1],
             link_preview=False,
         )
@@ -135,7 +135,7 @@ if Var.TG_BOT_USER_NAME_BF_HER is not None and tgbot is not None:
     async def on_plug_in_callback_query_handler(event):
         if event.query.user_id == bot.uid:
             await delete_mafia(event,
-              "⚡DARK BOT Menu Provider Is now Closed⚡\n\n         **[© 𝔻𝔸ℝ𝕂𝔹𝕆𝕋 ™](t.me/MafiaBot_Support)**", 5, link_preview=False
+              "⚡DARK BOT Menu Provider Is now Closed⚡\n\n         **[© 𝔻𝔸ℝ𝕂𝔹𝕆𝕋 ™](t.me/Dark_bot_Updates)**", 5, link_preview=False
             )
         else:
             mafia_alert = "Bas laga liya dimaag? Itni der se tip tip kar rahe ho. Jao khud ka bana lo na yrr. © 𝔻𝔸ℝ𝕂𝔹𝕆𝕋 ™"
