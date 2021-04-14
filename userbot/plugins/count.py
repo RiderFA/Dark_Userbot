@@ -62,7 +62,7 @@ async def stats(
         unread += dialog.unread_count
     stop_time = time.time() - start_time
     full_name = inline_mention(await event.client.get_me())
-    response = f"😈**Stats for {full_name}**😈\n\n"
+    response = f"🌟**Statistics for {full_name}**😈\n\n"
     response += f"🎗 **Private Chats:** {private_chats} \n"
     response += f"🌀   `Users: {private_chats - bots}` \n"
     response += f"🌀   `Bots: {bots}` \n"
@@ -80,7 +80,7 @@ async def stats(
     response += f"🎗 **Unread Mentions:** {unread_mentions} \n\n"
     response += f"⚜️   __It Took:__ {stop_time:.02f}s \n"
     response += (
-        f"📌 **From The DataBase Of** :- [DARKBOT](https://t.me/Dark_bot_support)"
+        f"⚡ **EXTRACTED FROM The Directory Of** :- [𝙳𝙰𝚁𝙺𝙱𝙾𝚃](https://t.me/Dark_bot_support)"
     )
     await mafia.edit(response)
 
