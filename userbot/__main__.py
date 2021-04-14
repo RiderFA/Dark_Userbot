@@ -51,7 +51,7 @@ for name in files:
 
 import userbot._core
 
-print(f"""ᴅᴀʀᴋ ʙᴏᴛ ɪs ɴᴏᴡ ᴏɴ!!! ᴅᴀʀᴋʙᴏᴛ  :- {1.0} YOUR 🇩 🇦 🇷 🇰 🇧 🇴 🇹   IS READY TO USE! FOR CHECK YOUR BOT WORKING OR NOT PLEASE TYPE (.alive/.ping) ENJOY YOUR BOT! JOIN FOR MORE FUTURE UPDATES @Dark_bot_support .""")
+print(f"""MAFIABOT IS ON!!! MAFIABOT VERSION :- {mafiaversion} YOUR 𝕄𝔸𝔽𝕀𝔸𝔹𝕆𝕋 IS READY TO USE! FOR CHECK YOUR BOT WORKING OR NOT PLEASE TYPE (.alive/.ping) ENJOY YOUR BOT! JOIN FOR MORE FUTURE UPDATES @MafiaBot_Support .""")
 
 if len(argv) not in (1, 3, 4):
     bot.disconnect()
