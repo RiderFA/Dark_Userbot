@@ -91,29 +91,8 @@ if Var.TG_BOT_USER_NAME_BF_HER is not None and tgbot is not None:
                 buttons=[[custom.Button.url("URL", part[0])]],
                 link_preview=True,
             )
-        else:
-            result = builder.article(
-                "@Dark_Bot_Support",
-                text="""**Hey! This is [Darkbot.](https://t.me/Dark_Bot_Support) \nYou can know more about me from the links given below 👇**""",
-                buttons=[
-                    [
-                        custom.Button.url("🔥 CHANNEL 🔥", "https://t.me/Dark_bot_updates"),
-                        custom.Button.url(
-                            "⚡ GROUP ⚡", "https://t.me/Dark_bot_support"
-                        ),
-                    ],
-                    [
-                        custom.Button.url(
-                            "✨ REPO ✨", "https://github.com/Harsh-78/Dark_Userbot"),
-                        custom.Button.url
-                    (
-                            "🔰 TUTORIAL 🔰", "https://youtu.be/M2FQJq_sHp4"
-                    )
-                    ],
-                ],
-                link_preview=False,
-            )
-        await event.answer([result] if result else None)
+        
+            
 
     @tgbot.on(callbackquery.CallbackQuery(data=compile(b"page\((.+?)\)")))
     async def page(event):
