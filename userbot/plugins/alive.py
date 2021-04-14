@@ -37,7 +37,7 @@ dark = bot.uid
 
 
 
-PM_IMG = "https://telegra.ph/file/c2f484ff3ddd53d752dcd.mp4"
+PM_IMG = "https://telegra.ph/file/bd05af18c9b4fc5b57233.mp4"
 
 
 
