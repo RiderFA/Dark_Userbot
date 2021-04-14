@@ -91,6 +91,7 @@ if Var.TG_BOT_USER_NAME_BF_HER is not None and tgbot is not None:
                 buttons=[[custom.Button.url("URL", part[0])]],
                 link_preview=True,
             )
+
         
             
 
@@ -109,13 +110,38 @@ if Var.TG_BOT_USER_NAME_BF_HER is not None and tgbot is not None:
             buttons=veriler[1],
             link_preview=False,
         )
-        
+        else:
+            result = builder.article(
+                "@Dark_Bot_Support",
+                text="""**Hey! This is [Darkbot.](https://t.me/Dark_Bot_Support) \nYou can know more about me from the links given below 👇**""",
+                buttons=[
+                    [
+                        custom.Button.url("🔥 CHANNEL 🔥", "https://t.me/Dark_bot_updates"),
+                        custom.Button.url(
+                            "⚡ GROUP ⚡", "https://t.me/Dark_bot_support"
+                        ),
+                    ],
+                    [
+                        custom.Button.url(
+                            "✨ REPO ✨", "https://github.com/Harsh-78/Dark_Userbot"),
+                        custom.Button.url
+                    (
+                            "🔰 TUTORIAL 🔰", "https://youtu.be/M2FQJq_sHp4"
+                    )
+                    ],
+                ],
+                link_preview=False,
+            )
+        await event.answer([result] if result else None)
+
+
     @tgbot.on(events.callbackquery.CallbackQuery(data=re.compile(b"close")))
     async def on_plug_in_callback_query_handler(event):
         if event.query.user_id == bot.uid:
             await delete_mafia(event,
               "⚡DARK BOT Menu Provider Is now Closed⚡\n\n         **[© 𝔻𝔸ℝ𝕂𝔹𝕆𝕋 ™](t.me/Dark_bot_Updates)**", 5, link_preview=False
             )
+
         else:
             mafia_alert = "Bas laga liya dimaag? Itni der se tip tip kar rahe ho. Jao khud ka bana lo na yrr. © 𝔻𝔸ℝ𝕂𝔹𝕆𝕋 ™"
             await event.answer(mafia_alert, cache_time=0, alert=True)
