@@ -23,7 +23,7 @@ async def send(event):
     message_id = event.message.id
     thumb = mafia_logo
     input_str = event.pattern_match.group(1)
-    omk = f"**⍟ Plugin name ≈** `{input_str}`\n**⍟ Uploaded by ≈** {mafia}\n\n⚡ **[LEGENDARY AF MAFIABOT](t.me/MafiaBot_Support)** ⚡"
+    omk = f"** 𖣘︎Plugin name ≈** `{input_str}`\n**❥ Uploaded by ≈** {mafia}\n\n⚡ **[𝙼𝙰𝚂𝚃𝙴𝚁 𝙰𝚃 𝙳𝙰𝚁𝙺𝙱𝙾𝚃](t.me/Dark_Bot_updates)** 🔥"
     the_plugin_file = "./userbot/plugins/{}.py".format(input_str)
     if os.path.exists(the_plugin_file):
         lauda = await event.client.send_file(
