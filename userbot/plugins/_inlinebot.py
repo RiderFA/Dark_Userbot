@@ -92,24 +92,6 @@ if Var.TG_BOT_USER_NAME_BF_HER is not None and tgbot is not None:
                 link_preview=True,
             )
 
-        
-            
-
-    @tgbot.on(callbackquery.CallbackQuery(data=compile(b"page\((.+?)\)")))
-    async def page(event):
-        if not event.query.user_id == bot.uid:
-            return await event.answer(
-                "DEKH KYA RAHE HO YRR JAO AUR APNA DARK BOT DEPLOY KARO AUR MAJA LO 𝔻𝔸ℝ𝕂𝔹𝕆𝕋™ ",
-                cache_time=0,
-                alert=True,
-            )
-        page = int(event.data_match.group(1).decode("UTF-8"))
-        veriler = button(page, CMD_HELP)
-        await event.edit(
-            f"**MASTER AT** [DARKBOT](https://t.me/DARK_Bot_Updates) __Working...__\n\n**Number of modules installed :** `{len(CMD_HELP)}`\n**page:** {page + 1}/{veriler[0]}",
-            buttons=veriler[1],
-            link_preview=False,
-        )
         else:
             result = builder.article(
                 "@Dark_Bot_Support",
@@ -134,6 +116,24 @@ if Var.TG_BOT_USER_NAME_BF_HER is not None and tgbot is not None:
             )
         await event.answer([result] if result else None)
 
+            
+
+    @tgbot.on(callbackquery.CallbackQuery(data=compile(b"page\((.+?)\)")))
+    async def page(event):
+        if not event.query.user_id == bot.uid:
+            return await event.answer(
+                "DEKH KYA RAHE HO YRR JAO AUR APNA DARK BOT DEPLOY KARO AUR MAJA LO 𝔻𝔸ℝ𝕂𝔹𝕆𝕋™ ",
+                cache_time=0,
+                alert=True,
+            )
+        page = int(event.data_match.group(1).decode("UTF-8"))
+        veriler = button(page, CMD_HELP)
+        await event.edit(
+            f"**MASTER AT** [DARKBOT](https://t.me/DARK_Bot_Updates) __Working...__\n\n**Number of modules installed :** `{len(CMD_HELP)}`\n**page:** {page + 1}/{veriler[0]}",
+            buttons=veriler[1],
+            link_preview=False,
+        )
+        
 
     @tgbot.on(events.callbackquery.CallbackQuery(data=re.compile(b"close")))
     async def on_plug_in_callback_query_handler(event):
