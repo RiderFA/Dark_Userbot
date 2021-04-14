@@ -11,7 +11,7 @@ from userbot import bot as mafiabot
 
 DELETE_TIMEOUT = 5
 DEFAULTUSER = str(ALIVE_NAME) if ALIVE_NAME else "Mafia User"
-mafia_logo = "./HARSH-78/Darkbot_logo.jpg"
+mafia_logo = "./Harsh-78/Darkbot_logo.jpg"
 h1m4n5hu0p = mafiabot.uid
 mafia = f"[{DEFAULTUSER}](tg://user?id={h1m4n5hu0p})"
 
