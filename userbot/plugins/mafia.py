@@ -13,7 +13,7 @@ async def reply_id(event):
     return reply_to_id
 
 
-DEFAULTUSER = ALIVE_NAME or "Mafia User"
+DEFAULTUSER = ALIVE_NAME or "Dark User"
 MAFIA_IMG = Config.ALIVE_PIC
 CUSTOM_ALIVE_TEXT = Config.ALIVE_MSG or "𝕄𝔸𝕊𝕋𝔼ℝ_𝔸𝕋_𝔻𝔸ℝ𝕂𝔹𝕆𝕋"
 
