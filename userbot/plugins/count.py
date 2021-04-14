@@ -80,7 +80,7 @@ async def stats(
     response += f"🎗 **Unread Mentions:** {unread_mentions} \n\n"
     response += f"⚜️   __It Took:__ {stop_time:.02f}s \n"
     response += (
-        f"⚡ **EXTRACTED FROM The Directory Of** :- [𝙳𝙰𝚁𝙺𝙱𝙾𝚃](https://t.me/Dark_bot_support)"
+        f"⚡ **EXTRACTED FROM The Directory Of** :-.            [⚡𝙳𝙰𝚁𝙺𝙱𝙾𝚃🔥](https://t.me/Dark_bot_support)"
     )
     await mafia.edit(response)
 
