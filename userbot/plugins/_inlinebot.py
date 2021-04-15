@@ -108,7 +108,7 @@ if Var.TG_BOT_USER_NAME_BF_HER is not None and tgbot is not None:
                             "✨ REPO ✨", "https://github.com/Harsh-78/Dark_Userbot"),
                         custom.Button.url
                     (
-                            "🔰 TUTORIAL 🔰", "https://youtu.be/M2FQJq_sHp4"
+                            "🔰 TUTORIAL 🔰", "https://telegra.ph/s-04-15-9"
                     )
                     ],
                 ],
