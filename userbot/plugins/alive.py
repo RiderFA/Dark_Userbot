@@ -87,7 +87,7 @@ pm_caption += "**⭐ℂℝ𝔼𝔸𝕋𝕆ℝ ⭐: [ ʜᴀʀsʜ ʜᴇʀᴇ](http
 
 
 
-pm_caption +=  "[☠️ᴅᴀʀᴋ ʙᴏᴛ ʀᴇᴘᴏ ☠️ ](https://github.com/Harsh-78/Dark_Userbot)\n "    
+pm_caption +=  "[☠️ᴅᴀʀᴋ ʙᴏᴛ ʀᴇᴘᴏ ☠️ ](https://github.com/Harsh-78/Dark-Userbot)\n "    
 
 
 
