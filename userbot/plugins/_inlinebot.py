@@ -83,36 +83,7 @@ if Var.TG_BOT_USER_NAME_BF_HER is not None and tgbot is not None:
                 buttons=veriler[1],
                 link_preview=False,
             )
-        elif query.startswith("http"):
-            part = query.split(" ")
-            result = builder.article(
-                "File uploaded",
-                text=f"**File uploaded successfully to {part[2]} site.\n\nUpload Time : {part[1][:3]} second\n[‏‏‎ ‎]({part[0]})",
-                buttons=[[custom.Button.url("URL", part[0])]],
-                link_preview=True,
-            )
-
-        else:
-            result = builder.article(
-                "@Dark_Bot_Support",
-                text="""**Hey! This is [Darkbot.](https://t.me/Dark_Bot_Support) \nYou can know more about me from the links given below 👇**""",
-                buttons=[
-                    [
-                        custom.Button.url("🔥 CHANNEL 🔥", "https://t.me/Dark_bot_updates"),
-                        custom.Button.url(
-                            "⚡ GROUP ⚡", "https://t.me/Dark_bot_support"
-                        ),
-                    ],
-                    [
-                        custom.Button.url(
-                            "✨ REPO ✨", "https://github.com/Harsh-78/Dark_Userbot"),
-                        custom.Button.url
-                    (
-                            "🔰 TUTORIAL 🔰", "https://telegra.ph/s-04-15-9"
-                    )
-                    ],
-                ],
-                link_preview=False,
+        
             )
         await event.answer([result] if result else None)
 
