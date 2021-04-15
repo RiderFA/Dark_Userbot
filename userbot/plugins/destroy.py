@@ -1,6 +1,7 @@
 """
 Available Commands: .destroy
 
+ """
 
 from telethon import events
 
