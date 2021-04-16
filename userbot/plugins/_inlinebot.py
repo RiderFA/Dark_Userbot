@@ -1,4 +1,4 @@
-#    Copyright (C) @kraken_the_badass 2021-2022
+#    Copyright (C) @Harsh_78 2021-2022
 #    This program is free software: you can redistribute it and/or modify
 #    it under the terms of the GNU Affero General Public License as published by
 #    the Free Software Foundation, either version 3 of the License, or
@@ -12,7 +12,6 @@
 #    along with this program.  If not, see <https://www.gnu.org/licenses/>.
 #
 #
-#    This Inline Helper Code is solely owned by @kraken_the_badass
 #    You Should Not Copy This Code Without Proper Permission.
 
 from math import ceil
@@ -25,17 +24,17 @@ from telethon.tl.functions.channels import JoinChannelRequest
 
 from userbot import *
 from userbot.cmdhelp import *
-from mafiabot.utils import *
+from userbot.utils import *
 from userbot.Config import Config
 
 mafia_row = Config.BUTTONS_IN_HELP
 mafia_emoji = Config.EMOJI_IN_HELP
 # thats how a lazy guy imports
-# mafiabot
+# Darkbot
 
 def button(page, modules):
     Row = mafia_row
-    Column = 3
+    Column = 2
 
     modules = sorted([modul for modul in modules if not modul.startswith("_")])
     pairs = list(map(list, zip(modules[::2], modules[1::2])))
@@ -75,71 +74,47 @@ if Var.TG_BOT_USER_NAME_BF_HER is not None and tgbot is not None:
         builder = event.builder
         result = None
         query = event.text
-        if event.query.user_id == bot.uid and query == "@MafiaBot_Support":
+        if event.query.user_id == bot.uid and query == "@Dark_bot_Updates":
             rev_text = query[::-1]
             veriler = button(0, sorted(CMD_HELP))
             result = await builder.article(
                 f"Hey! Only use .help please",
-                text=f"**Running MafiaBot**\n\n__Number of plugins installed__ :`{len(CMD_HELP)}`\n**page:** 1/{veriler[0]}",
+                text=f"**Running DARKBOT**\n\n__Number of plugins installed__ :`{len(CMD_HELP)}`\n**page:** 1/{veriler[0]}",
                 buttons=veriler[1],
                 link_preview=False,
             )
-        elif query.startswith("http"):
-            part = query.split(" ")
-            result = builder.article(
-                "File uploaded",
-                text=f"**File uploaded successfully to {part[2]} site.\n\nUpload Time : {part[1][:3]} second\n[‏‏‎ ‎]({part[0]})",
-                buttons=[[custom.Button.url("URL", part[0])]],
-                link_preview=True,
-            )
-        else:
-            result = builder.article(
-                "@MafiaBot_Support",
-                text="""**Hey! This is [MafiaBot.](https://t.me/MafiaBot_Support) \nYou can know more about me from the links given below 👇**""",
-                buttons=[
-                    [
-                        custom.Button.url("🔥 CHANNEL 🔥", "https://t.me/MafiaBot_Support"),
-                        custom.Button.url(
-                            "⚡ GROUP ⚡", "https://t.me/MafiaBot_Chit_Chat"
-                        ),
-                    ],
-                    [
-                        custom.Button.url(
-                            "✨ REPO ✨", "https://github.com/H1M4N5HU0P/MAFIABOT"),
-                        custom.Button.url
-                    (
-                            "🔰 TUTORIAL 🔰", "https://youtu.be/M2FQJq_sHp4"
-                    )
-                    ],
-                ],
-                link_preview=False,
-            )
+        
+            
         await event.answer([result] if result else None)
+
+            
 
     @tgbot.on(callbackquery.CallbackQuery(data=compile(b"page\((.+?)\)")))
     async def page(event):
         if not event.query.user_id == bot.uid:
             return await event.answer(
-                "HELLO THERE. PLEASE MAKE YOUR OWN MAFIABOT AND USE © MAFIABOT™ ",
+                "DEKH KYA RAHE HO YRR JAO AUR APNA DARK BOT DEPLOY KARO AUR MAJA LO 𝔻𝔸ℝ𝕂𝔹𝕆𝕋™ ",
                 cache_time=0,
                 alert=True,
             )
         page = int(event.data_match.group(1).decode("UTF-8"))
         veriler = button(page, CMD_HELP)
         await event.edit(
-            f"**Legenday AF** [MafiaBot](https://t.me/MafiaBot_Support) __Working...__\n\n**Number of modules installed :** `{len(CMD_HELP)}`\n**page:** {page + 1}/{veriler[0]}",
+            f"**MASTER AT** [DARKBOT](https://t.me/DARK_Bot_Updates) __Working...__\n\n**Number of modules installed :** `{len(CMD_HELP)}`\n**page:** {page + 1}/{veriler[0]}",
             buttons=veriler[1],
             link_preview=False,
         )
         
+
     @tgbot.on(events.callbackquery.CallbackQuery(data=re.compile(b"close")))
     async def on_plug_in_callback_query_handler(event):
         if event.query.user_id == bot.uid:
             await delete_mafia(event,
-              "⚜️MafiaBot Menu Provider Is now Closed⚜️\n\n         **[© MafiaBot ™](t.me/MafiaBot_Support)**", 5, link_preview=False
+              "⚡DARK BOT Menu Provider Is now Closed⚡\n\n         **[© 𝔻𝔸ℝ𝕂𝔹𝕆𝕋 ™](t.me/Dark_bot_Updates)**", 5, link_preview=False
             )
+
         else:
-            mafia_alert = "Ho gya aapka? Kabse tapar tapar dabae jaa rhe h. Khudka bna lo na agr chaiye to. © MafiaBot ™"
+            mafia_alert = "Bas laga liya dimaag? Itni der se tip tip kar rahe ho. Jao khud ka bana lo na yrr. © 𝔻𝔸ℝ𝕂𝔹𝕆𝕋 ™"
             await event.answer(mafia_alert, cache_time=0, alert=True)
           
     @tgbot.on(
@@ -148,7 +123,7 @@ if Var.TG_BOT_USER_NAME_BF_HER is not None and tgbot is not None:
     async def Information(event):
         if not event.query.user_id == bot.uid:
             return await event.answer(
-                "HELLO THERE. PLEASE MAKE YOUR OWN MAFIABOT AND USE © MafiaBot ™ ",
+                "HELLO THERE. PLEASE MAKE YOUR OWN DARKBOT AND USE © 𝔻𝔸ℝ𝕂𝔹𝕆𝕋 ™ ",
                 cache_time=0,
                 alert=True,
             )
@@ -158,7 +133,7 @@ if Var.TG_BOT_USER_NAME_BF_HER is not None and tgbot is not None:
         try:
             buttons = [
                 custom.Button.inline(
-                    "⚡ " + cmd[0], data=f"commands[{commands}[{page}]]({cmd[0]})"
+                    "⚔️ " + cmd[0], data=f"commands[{commands}[{page}]]({cmd[0]})"
                 )
                 for cmd in CMD_HELP_BOT[commands]["commands"].items()
             ]
@@ -170,7 +145,7 @@ if Var.TG_BOT_USER_NAME_BF_HER is not None and tgbot is not None:
         buttons = [buttons[i : i + 2] for i in range(0, len(buttons), 2)]
         buttons.append([custom.Button.inline("◀️ ᏰᎯᏣᏦ", data=f"page({page})")])
         await event.edit(
-            f"**📗 File:** `{commands}`\n**🔢 Number of commands :** `{len(CMD_HELP_BOT[commands]['commands'])}`",
+            f"**🗒️ File:** `{commands}`\n**🔢 Number of commands :** `{len(CMD_HELP_BOT[commands]['commands'])}`",
             buttons=buttons,
             link_preview=False,
         )
@@ -181,7 +156,7 @@ if Var.TG_BOT_USER_NAME_BF_HER is not None and tgbot is not None:
     async def commands(event):
         if not event.query.user_id == bot.uid:
             return await event.answer(
-                "HELLO THERE. PLEASE MAKE YOUR OWN MAFIABOT AND USE © MafiaBot ™ ",
+                "HELLO THERE. PLEASE MAKE YOUR OWN DARKBOT AND USE © 𝔻𝔸ℝ𝕂𝔹𝕆𝕋 ™ ",
                 cache_time=0,
                 alert=True,
             )
@@ -190,7 +165,7 @@ if Var.TG_BOT_USER_NAME_BF_HER is not None and tgbot is not None:
         page = int(event.data_match.group(2).decode("UTF-8"))
         commands = event.data_match.group(3).decode("UTF-8")
 
-        result = f"**📗 File:** `{cmd}`\n"
+        result = f"**🗒️ File:** `{cmd}`\n"
         if CMD_HELP_BOT[cmd]["info"]["info"] == "":
             if not CMD_HELP_BOT[cmd]["info"]["warning"] == "":
                 result += f"**⬇️ Official:** {'✅' if CMD_HELP_BOT[cmd]['info']['official'] else '❌'}\n"
@@ -224,5 +199,3 @@ if Var.TG_BOT_USER_NAME_BF_HER is not None and tgbot is not None:
         )
 
 
-# Ask owner before using it in your codes
-# Kangers like LB stay away...
